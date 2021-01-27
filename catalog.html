@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Каталог шаблонов Nёrds</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicon152.svg" type="image/svg+×ml">
+  <link rel="icon" href="img/favicon152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -12,7 +12,7 @@
   <header>
     <nav>
       <a>
-        <img src="img/nerds-logo.png" width="165" height="65" alt="Логотип компании">
+        <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип компании">
       </a>
       <ul>
         <li><a href="index.html">Студия</a></li>
@@ -29,9 +29,11 @@
       <h2>Сортировка</h2>
       <p>Сортировать:</p>
       <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По названию</li>
+        <li><a>По цене</a></li>
+        <li><a>По типу</a></li>
+        <li><a>По названию</a></li>
+        <li><a>По возрастанию</a></li>
+        <li><a>По убыванию</a></li>
       </ul>
     </section>
     <section>
@@ -46,18 +48,18 @@
           </ul>
         </fieldset>
         <fieldset>
-          <Legend>Сетка:</legend>
+          <legend>Сетка:</legend>
           <ul>
             <li>
-              <input type ="radio" name="template-type" value="adaptive" id="filter-adaptive" checked>
+              <input type="radio" name="template-type" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
-              <input type ="radio" name="template-type" value="fixed" id="filter-fixed">
+              <input type="radio" name="template-type" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li>
-              <input type ="radio" name="template-type" value="liquid" id="filter-liquid">
+              <input type="radio" name="template-type" value="liquid" id="filter-liquid">
               <label for="filter-liquid">Резиновая</label>
             </li>
           </ul>
@@ -66,19 +68,19 @@
           <legend>Особенности:</legend>
           <ul>
             <li>
-              <input type ="checkbox" name="slider" id="filter-slider" checked>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
             <li>
-              <input type ="checkbox" name="advantage" id="filter-advantage">
+              <input type="checkbox" name="advantage" id="filter-advantage">
               <label for="filter-advantage">Преимущества</label>
             </li>
             <li>
-              <input type ="checkbox" name="news" id="filter-news" checked>
+              <input type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
             <li>
-              <input type ="checkbox" name="gallery" id="filter-gallery">
+              <input type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
             <li>
@@ -99,7 +101,7 @@
           </a>
           <h3>Sedona</h3>
           <p>Информационный сайт для туристов</p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </li>
         <li>
           <a href="#">
@@ -107,7 +109,7 @@
           </a>
           <h3>Pink app</h3>
           <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </li>
         <li>
           <a href="#">
@@ -115,7 +117,7 @@
           </a>
           <h3>Barbershop</h3>
           <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </li>
         <li>
           <a href="#">
@@ -123,7 +125,7 @@
           </a>
           <h3>Mishka</h3>
           <p>Интернет-магазин<br>вязаных игрушек</p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </li>
         <li>
           <a href="#">
@@ -131,7 +133,7 @@
           </a>
           <h3>A plus</h3>
           <p>Лендинг курсов повышения квалификации</p>
-          <button type="button">9 900 ₽</button>
+          <a href="#">9 900 ₽</a>
         </li>
         <li>
           <a href="#">
@@ -143,17 +145,15 @@
         </li>
       </ul>
       <ul>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Следующая</a>
+        <li><a>1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Следующая</a></li>
       </ul>
     </section>
     <section>
       <h2>Мы на карте</h2>
-      <figure>
-        <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-      </figure>
+      <img src="img/map.png" width="1440" height="416" alt="Карта">
       <img src="img/map-marker.png" width="231" height="190" alt="Лого на карте">
       <address>
         Nёrds design studio<br>
