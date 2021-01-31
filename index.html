@@ -1,150 +1,174 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Нёрдс</title>
+  <title>Каталог шаблонов Nёrds</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
-  <header>
-    <nav>
-      <a>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип компании">
       </a>
-      <ul>
-        <li><a href="#">Студия</a></li>
+      <ul class="site-navigation">
+        <li><a class="selected" href="index.html">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <a href="#">Корзина</a>
+      <div class="user-navigation">
+        <a class="cart" href="#">Корзина</a>
+      </div>
     </nav>
   </header>
-  <main>
-    <section>
+  <main class="container">
+    <section class="main-screen">
       <h1>Долго, дорого, скрупулезно.</h1>
       <p>Математически выверенный дизайн<br>
         для вашего сайта или мобильного приложения.
       </p>
-      <a href="#">Узнать больше</a>
-      <section>
-        <figure>
+      <a class="button" href="#">Узнать больше</a>
+      <section class="slider">
+        <figure class="slider-pic">
           <img src="img/nerds-index-slide.png" width="760" height="431" alt="Слайд слайдера">
         </figure>
-        <ul>
-          <li><button type="button"></button></li>
-          <li><button type="button"></button></li>
-          <li><button type="button"></button></li>
+        <ul class="slider-navigation">
+          <li><button class="slider-button" type="button"></button></li>
+          <li><button class="slider-button" type="button"></button></li>
+          <li><button class="slider-button" type="button"></button></li>
         </ul>
       </section>
     </section>
-    <section>
-      <h2>Услуги</h2>
-      <ul>
-        <li>
+    <section class="services">
+      <h2 class="hidden">Услуги</h2>
+      <ul class="sevices-list">
+        <li class="services-item">
           <img src="img/illustration-1.jpg" width="300" height="146" alt="Иллюстрация услуги">
-          <h3>Веб-сайы</h3>
+          <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#">Заказать</a>
+          <a class="button" href="#">Заказать</a>
         </li>
-        <li>
+        <li class="services-item">
           <img src="img/illustration-2.jpg" width="300" height="146" alt="Иллюстрация услуги">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#">Заказать</a>
+          <a class="button green" href="#">Заказать</a>
         </li>
-        <li>
+        <li class="services-item">
           <img src="img/illustration-3.jpg" width="300" height="146" alt="Иллюстрация услуги">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#">Заказать</a>
+          <a class="button yellow" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="about">
       <h2>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
         превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <p>Выполняем заказы на разработку:</p>
-      <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      <h3>Выполняем заказы на разработку:</h3>
+      <ul class="about-list">
+        <li class="about-item">Веб-сайтов любой сложности</li>
+        <li class="about-item">Мобильных приложений для iOS и Android</li>
+        <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </section>
-    <section>
-      <figure>
+    <section class="company">
+      <figure class="company-logo">
         <img src="img/nerds-illustration.png" width="360" height="208" alt="Цветной логотип"></img>
       </figure>
       <p>с 2004 года Любим точность во всем:</p>
-      <ul>
-        <li>
+      <ul class="company-numbers">
+        <li class="company-number">
           <b>146<sup>%</sup></b>
           <span>Уровень самоотдачи</span>
         </li>
-        <li>
+        <li class="company-number">
           <b>100<sup>%</sup></b>
           <span>Соблюдение сроков</span>
         </li>
-        <li>
+        <li class="company-number">
           <b>50<sup>%</sup></b>
           <span>Минимальная предоплата</span>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Наши партнеры</h2>
-      <ul>
-        <li>
+    <section class="partners">
+      <h2 class="hidden">Наши партнеры</h2>
+      <ul class="partners-list">
+        <li class="partners-item">
           <a>
             <img src="img/logo-html.svg" width="199" height="68" alt="Лого партнера">
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a>
             <img src="img/logo-barber.png" width="209" height="90" alt="Лого партнера">
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a>
             <img src="img/logo-pink.png" width="185" height="52" alt="Лого партнера">
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a>
             <img src="img/logo-mishka.png" width="173" height="84" alt="Лого партнера">
           </a>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Мы на карте</h2>
-      <figure>
+    <section class="contacts">
+      <h2 class="hidden">Мы на карте</h2>
+      <figure class="map">
         <img src="img/map.png" width="1440" height="416" alt="Карта">
       </figure>
       <img src="img/map-marker.png" width="231" height="190" alt="Лого на карте">
+      <h3>Nёrds design studio</h3>
       <address>
-        Nёrds design studio<br>
         191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8<br><br>
-        тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a>
+        тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
       </address>
-      <a href="#">Напишите нам</a>
+      <a class="button" href="#">Напишите нам</a>
     </section>
   </main>
-  <footer>
-    <section>
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+  <footer class="main-footer">
+    <section class="social">
+      <ul class="social-list">
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
     </section>
     <h2>Давайте дружить, это выгодно!</h2>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
+  <section class="popup">
+    <h2>Напишите нам</h2>
+    <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="popup-name">Ваше имя:</label>
+        <input class="user-name" id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="popup-email">Ваш email:</label>
+        <input class="user-email" id="popup-email" type="text" name="email" placeholder="email@example.ru">
+      </p>
+      <p>
+        <label for="popup-text">Текст письма:</label>
+        <textarea class="user-text" id="popup-text" name="text" rows="4" cols="80" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="popup-close" type="button">Закрыть</button>
+  </section>
 </body>
 </html>
