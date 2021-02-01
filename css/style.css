@@ -21,6 +21,7 @@
   --contacts-grey: #666666;
   --footer-grey: #444444;
   --logo-grey: #A6A6A6;
+  --text-button-opacity: rgba(255, 255, 255, 0.3);
 }
 
 /* Global */
@@ -42,11 +43,17 @@
   height: auto;
 }
 
+.clear-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* button */
 
 .button {
   font: inherit;
-  text-transform: uppercase;;
+  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -60,7 +67,7 @@
 }
 
 .button:focus {
-  color: rgba(255,255,255,0.3);
+  color: var(--text-button-opacity);
   backround-color: var(--basic-dark-red);
 }
 
@@ -91,9 +98,6 @@
 .main-navigation-wrapper {
   background-color: var(--basic-white);
 }
-.site-navigation {
-  list-style: none;
-}
 
 .site-navigation a,
 .user-navigation a {
@@ -111,7 +115,7 @@
 }
 
 .selected {
-border-bottom: 2px solid var(--basic-light-red);
+  border-bottom: 2px solid var(--basic-light-red);
 }
 
 /* Main screen */
@@ -125,10 +129,6 @@ border-bottom: 2px solid var(--basic-light-red);
 
 .main-screen {
   background-color: var(--basic-light-grey);
-}
-
-.slider-navigation {
-  list-style: none;
 }
 
 .slider-button {
@@ -145,31 +145,27 @@ border-bottom: 2px solid var(--basic-light-red);
   color: var(--basic-black);
 }
 
-.sevices-list {
-  list-style: none;
-}
-
-.green {
+.green-button {
   background-color: var(--basic-light-green);
 }
 
-.green:hover {
+.green-button:hover {
   background-color: var(--basic-green);
 }
 
-.green:focus {
+.green-button:focus {
   backround-color: var(--basic-dark-green);
 }
 
-.yellow {
+.yellow-button {
   background-color: var(--basic-light-yellow);
 }
 
-.yellow:hover {
+.yellow-button:hover {
   background-color: var(--basic-yellow);
 }
 
-.yellow:focus {
+.yellow-button:focus {
   backround-color: var(--basic-dark-yellow);
 }
 
@@ -185,10 +181,6 @@ border-bottom: 2px solid var(--basic-light-red);
 .about h3 {
  font-weight: 700;
  color: var(--basic-black);
-}
-
-.about-list {
-  list-style: none;
 }
 
 .company p {
@@ -208,15 +200,7 @@ border-bottom: 2px solid var(--basic-light-red);
   line-height: 18px;
 }
 
-.company-numbers {
-  list-style: none;
-}
-
 /* partners */
-
-.partners-list {
-  list-style: none;
-}
 
 .partners-list a {
   opacity: 0.2;
@@ -254,10 +238,6 @@ border-bottom: 2px solid var(--basic-light-red);
 }
 
 /* footer */
-
-.social-list {
-  list-style: none;
-}
 
 .main-footer h2 {
   font-size: 36px;
