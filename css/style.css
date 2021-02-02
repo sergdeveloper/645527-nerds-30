@@ -3,6 +3,7 @@
 :root {
   --basic-light-black: #283136;
   --basic-black: #000000;
+  --basic-black-opacity: rgba(0, 0, 0, 0.3);
   --basic-dark-black: #231F20;
   --basic-light-red: #FB565A;
   --basic-red: #E74246;
@@ -212,6 +213,107 @@
 
 .partners-list a:active {
   opacity: 0.1;
+}
+
+/*sort */
+
+.sort p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sort-item {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sort-item:hover {
+opacity: 0.6;
+}
+
+.sort-item:active {
+  opacity: 1;
+}
+
+.active-sort {
+  opacity: 1;
+}
+
+/* filters */
+
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.filter-price input {
+  background-color: var(--basic-light-grey);
+}
+
+.filters p {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filters label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.grey-button {
+  background-color: var(--basic-light-grey);
+  color: var(--basic-black);
+}
+
+.grey-button:hover {
+  background-color: var(--basic-grey);
+}
+
+.grey-button:focus {
+  background-color: var(--basic-dark-grey);
+  color: var(--basic-black-opacity);
+}
+
+.grey-button:active {
+  background-color: var(--basic-white);
+}
+
+/* catalog */
+
+.catalog h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.catalog h3:hover {
+  color: var(--basic-light-red);
+}
+
+.catalog h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog p {
+  line-height: 18px;
+  text-align: center;
+}
+
+/* pagination */
+
+.active-pagination {
+  background-color: var(--basic-white);
 }
 
 /* contacts */
