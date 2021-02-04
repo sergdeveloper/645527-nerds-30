@@ -14,27 +14,31 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип компании">
-      </a>
-      <ul class="site-navigation clear-list">
-        <li><a class="selected" href="index.html">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <div class="user-navigation">
-        <a class="cart" href="#">Корзина</a>
+      <div class="main-navigation-wrapper">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип компании">
+        </a>
+        <ul class="site-navigation clear-list">
+          <li><a class="selected" href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a class="cart" href="#">Корзина</a>
+        </div>
       </div>
     </nav>
   </header>
   <main class="container">
     <section class="main-screen">
-      <h1>Долго, дорого, скрупулезно.</h1>
-      <p>Математически выверенный дизайн<br>
-        для вашего сайта или мобильного приложения.
-      </p>
-      <a class="button" href="#">Узнать больше</a>
+      <div class="main-screen-text">
+        <h1>Долго, дорого, скрупулезно.</h1>
+        <p>Математически выверенный дизайн<br>
+          для вашего сайта или мобильного приложения.
+        </p>
+        <a class="button" href="#">Узнать больше</a>
+      </div>
       <section class="slider">
         <figure class="slider-pic">
           <img src="img/nerds-index-slide.png" width="760" height="431" alt="Слайд слайдера">
@@ -69,37 +73,39 @@
         </li>
       </ul>
     </section>
-    <section class="about">
-      <h2>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-        превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <h3>Выполняем заказы на разработку:</h3>
-      <ul class="about-list">
-        <li class="about-item">Веб-сайтов любой сложности</li>
-        <li class="about-item">Мобильных приложений для iOS и Android</li>
-        <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-    </section>
-    <section class="company">
-      <figure class="company-logo">
-        <img src="img/nerds-illustration.png" width="360" height="208" alt="Цветной логотип"></img>
-      </figure>
-      <p>с 2004 года Любим точность во всем:</p>
-      <ul class="company-numbers clear-list">
-        <li class="company-number">
-          <b>146<sup>%</sup></b>
-          <span>Уровень самоотдачи</span>
-        </li>
-        <li class="company-number">
-          <b>100<sup>%</sup></b>
-          <span>Соблюдение сроков</span>
-        </li>
-        <li class="company-number">
-          <b>50<sup>%</sup></b>
-          <span>Минимальная предоплата</span>
-        </li>
-      </ul>
-    </section>
+    <div class="information">
+      <section class="about">
+        <h2>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+          превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3>Выполняем заказы на разработку:</h3>
+        <ul class="about-list clear-list">
+          <li class="about-item">Веб-сайтов любой сложности</li>
+          <li class="about-item">Мобильных приложений для iOS и Android</li>
+          <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </section>
+      <section class="company">
+        <figure class="company-logo">
+          <img src="img/nerds-illustration.png" width="360" height="208" alt="Цветной логотип"></img>
+        </figure>
+        <p>с 2004 года Любим точность во всем:</p>
+        <ul class="company-numbers clear-list">
+          <li class="company-number">
+            <b>146<sup>%</sup></b>
+            <span>Уровень самоотдачи</span>
+          </li>
+          <li class="company-number">
+            <b>100<sup>%</sup></b>
+            <span>Соблюдение сроков</span>
+          </li>
+          <li class="company-number">
+            <b>50<sup>%</sup></b>
+            <span>Минимальная предоплата</span>
+          </li>
+        </ul>
+      </section>
+    </div>
     <section class="partners">
       <h2 class="hidden">Наши партнеры</h2>
       <ul class="partners-list clear-list">
@@ -148,8 +154,10 @@
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
     </section>
-    <h2>Давайте дружить, это выгодно!</h2>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <div class="footer-labels">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
   <section class="popup">
     <h2>Напишите нам</h2>

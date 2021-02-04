@@ -37,6 +37,10 @@
   font-weight: 400;
   color: var(--basic-light-black);
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .page img {
@@ -48,6 +52,18 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* grid */
+
+.page {
+  height: 100%;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 /* button */
@@ -87,17 +103,22 @@
 }
 
 .main-navigation {
+  display: grid;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-white);
 }
 
-.main-navigation a {
-  text-decoration: none;
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 1160px;
 }
 
-.main-navigation-wrapper {
-  background-color: var(--basic-white);
+.main-navigation a {
+  text-decoration: none;
 }
 
 .site-navigation a,
@@ -129,7 +150,13 @@
 }
 
 .main-screen {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   background-color: var(--basic-light-grey);
+}
+
+.main-screen-wrapper {
+
 }
 
 .slider-button {
@@ -137,6 +164,13 @@
 }
 
 /* services */
+
+.sevices-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin-top: 80px;
+}
 
 .services h3 {
   font-size: 24px;
@@ -172,6 +206,12 @@
 
 /* about */
 
+.information {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 73px;
+}
+
 .about h2 {
   font-size: 45px;
   line-height: 45px;
@@ -180,8 +220,8 @@
 }
 
 .about h3 {
- font-weight: 700;
- color: var(--basic-black);
+  font-weight: 700;
+  color: var(--basic-black);
 }
 
 .company p {
@@ -202,6 +242,12 @@
 }
 
 /* partners */
+
+.partners-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 66px;
+}
 
 .partners-list a {
   opacity: 0.2;
@@ -232,7 +278,7 @@
 }
 
 .sort-item:hover {
-opacity: 0.6;
+  opacity: 0.6;
 }
 
 .sort-item:active {
@@ -318,6 +364,10 @@ opacity: 0.6;
 
 /* contacts */
 
+.contacts {
+  margin-top: 80px;
+}
+
 .contacts h3 {
   font-size: 18px;
   line-height: 30px;
@@ -340,6 +390,17 @@ opacity: 0.6;
 }
 
 /* footer */
+
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 1160px;
+  margin: 68px auto;
+}
+
+.footer-labels {
+  justify-self: center;
+}
 
 .main-footer h2 {
   font-size: 36px;
