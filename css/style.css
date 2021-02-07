@@ -77,6 +77,7 @@
   background-color: var(--basic-light-red);
   color: var(--basic-white);
   border: none;
+  padding: 17px 54px;
 }
 
 .button:hover {
@@ -107,14 +108,9 @@
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-white);
-}
-
-.main-navigation-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr min-content;
-  margin: 0 auto;
   padding-top: 50px;
-  width: 1160px;
 }
 
 .main-navigation a {
@@ -142,34 +138,63 @@
 
 /* Main screen */
 
+.main-screen {
+  background-color: var(--basic-light-grey);
+  margin-bottom: 80px;
+}
+
 .main-screen h1 {
+  width: 538px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 25px;
   color: var(--basic-black);
 }
 
-.main-screen {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: var(--basic-light-grey);
+.slider {
+  position: relative;
 }
 
-.main-screen-wrapper {
-
+.slider p {
+  margin-bottom: 38px;
 }
 
 .slider-button {
   background-color: var(--basic-white);
 }
 
+.slide {
+  display: none;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-first {
+  display: block;
+  background-image: url("../img/nerds-index-slide.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 85px;
+  padding-bottom: 80px;
+}
+
 /* services */
+
+.services {
+  padding-bottom: 80px;
+}
 
 .sevices-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 100px;
-  margin-top: 80px;
+  padding-right: 60px;
 }
 
 .services h3 {
@@ -209,7 +234,7 @@
 .information {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin-top: 73px;
+  padding-top: 73px;
 }
 
 .about h2 {
@@ -243,10 +268,13 @@
 
 /* partners */
 
+.partners {
+  margin-top: 66px;
+}
+
 .partners-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 66px;
 }
 
 .partners-list a {
@@ -394,8 +422,7 @@
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  width: 1160px;
-  margin: 68px auto;
+  padding: 68px 0;
 }
 
 .footer-labels {

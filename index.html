@@ -13,124 +13,135 @@
 </head>
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип компании">
-        </a>
-        <ul class="site-navigation clear-list">
-          <li><a class="selected" href="index.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="user-navigation">
-          <a class="cart" href="#">Корзина</a>
-        </div>
+    <nav class="main-navigation container">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип компании">
+      </a>
+      <ul class="site-navigation clear-list">
+        <li><a class="selected" href="index.html">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="user-navigation">
+        <a class="cart" href="#">Корзина</a>
       </div>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <section class="main-screen">
-      <div class="main-screen-text">
-        <h1>Долго, дорого, скрупулезно.</h1>
-        <p>Математически выверенный дизайн<br>
-          для вашего сайта или мобильного приложения.
-        </p>
-        <a class="button" href="#">Узнать больше</a>
+      <div class="container slider">
+        <div class="slide slide-first">
+          <h1>Долго, дорого, скрупулезно.</h1>
+          <p>Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения.
+          </p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
+        <div class="slide slide-second">
+          <h1>Долго, дорого, скрупулезно.</h1>
+          <p>Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения.
+          </p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
+        <div class="slide slide-thirdt">
+          <h1>Долго, дорого, скрупулезно.</h1>
+          <p>Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения.
+          </p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
+        <div class="slider-buttons">
+          <button class="slider-button" type="button"></button>
+          <button class="slider-button" type="button"></button>
+          <button class="slider-button" type="button"></button>
+        </div>
       </div>
-      <section class="slider">
-        <figure class="slider-pic">
-          <img src="img/nerds-index-slide.png" width="760" height="431" alt="Слайд слайдера">
-        </figure>
-        <ul class="slider-navigation clear-list">
-          <li><button class="slider-button" type="button"></button></li>
-          <li><button class="slider-button" type="button"></button></li>
-          <li><button class="slider-button" type="button"></button></li>
+    </section>
+    <div class="container">
+      <section class="services">
+        <h2 class="hidden">Услуги</h2>
+        <ul class="sevices-list clear-list">
+          <li class="services-item">
+            <img src="img/illustration-1.jpg" width="300" height="146" alt="Иллюстрация услуги">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button" href="#">Заказать</a>
+          </li>
+          <li class="services-item">
+            <img src="img/illustration-2.jpg" width="300" height="146" alt="Иллюстрация услуги">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button green-button" href="#">Заказать</a>
+          </li>
+          <li class="services-item">
+            <img src="img/illustration-3.jpg" width="300" height="146" alt="Иллюстрация услуги">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button yellow-button" href="#">Заказать</a>
+          </li>
         </ul>
       </section>
-    </section>
-    <section class="services">
-      <h2 class="hidden">Услуги</h2>
-      <ul class="sevices-list clear-list">
-        <li class="services-item">
-          <img src="img/illustration-1.jpg" width="300" height="146" alt="Иллюстрация услуги">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button" href="#">Заказать</a>
-        </li>
-        <li class="services-item">
-          <img src="img/illustration-2.jpg" width="300" height="146" alt="Иллюстрация услуги">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button green-button" href="#">Заказать</a>
-        </li>
-        <li class="services-item">
-          <img src="img/illustration-3.jpg" width="300" height="146" alt="Иллюстрация услуги">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button yellow-button" href="#">Заказать</a>
-        </li>
-      </ul>
-    </section>
-    <div class="information">
-      <section class="about">
-        <h2>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-          превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul class="about-list clear-list">
-          <li class="about-item">Веб-сайтов любой сложности</li>
-          <li class="about-item">Мобильных приложений для iOS и Android</li>
-          <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
-      <section class="company">
-        <figure class="company-logo">
-          <img src="img/nerds-illustration.png" width="360" height="208" alt="Цветной логотип"></img>
-        </figure>
-        <p>с 2004 года Любим точность во всем:</p>
-        <ul class="company-numbers clear-list">
-          <li class="company-number">
-            <b>146<sup>%</sup></b>
-            <span>Уровень самоотдачи</span>
+      <div class="information">
+        <section class="about">
+          <h2>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+            превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul class="about-list clear-list">
+            <li class="about-item">Веб-сайтов любой сложности</li>
+            <li class="about-item">Мобильных приложений для iOS и Android</li>
+            <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section class="company">
+          <figure class="company-logo">
+            <img src="img/nerds-illustration.png" width="360" height="208" alt="Цветной логотип"></img>
+          </figure>
+          <p>с 2004 года Любим точность во всем:</p>
+          <ul class="company-numbers clear-list">
+            <li class="company-number">
+              <b>146<sup>%</sup></b>
+              <span>Уровень самоотдачи</span>
+            </li>
+            <li class="company-number">
+              <b>100<sup>%</sup></b>
+              <span>Соблюдение сроков</span>
+            </li>
+            <li class="company-number">
+              <b>50<sup>%</sup></b>
+              <span>Минимальная предоплата</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="partners">
+        <h2 class="hidden">Наши партнеры</h2>
+        <ul class="partners-list clear-list">
+          <li class="partners-item">
+            <a>
+              <img src="img/logo-html.svg" width="199" height="68" alt="Лого партнера">
+            </a>
           </li>
-          <li class="company-number">
-            <b>100<sup>%</sup></b>
-            <span>Соблюдение сроков</span>
+          <li class="partners-item">
+            <a>
+              <img src="img/logo-barber.png" width="209" height="90" alt="Лого партнера">
+            </a>
           </li>
-          <li class="company-number">
-            <b>50<sup>%</sup></b>
-            <span>Минимальная предоплата</span>
+          <li class="partners-item">
+            <a>
+              <img src="img/logo-pink.png" width="185" height="52" alt="Лого партнера">
+            </a>
+          </li>
+          <li class="partners-item">
+            <a>
+              <img src="img/logo-mishka.png" width="173" height="84" alt="Лого партнера">
+            </a>
           </li>
         </ul>
       </section>
     </div>
-    <section class="partners">
-      <h2 class="hidden">Наши партнеры</h2>
-      <ul class="partners-list clear-list">
-        <li class="partners-item">
-          <a>
-            <img src="img/logo-html.svg" width="199" height="68" alt="Лого партнера">
-          </a>
-        </li>
-        <li class="partners-item">
-          <a>
-            <img src="img/logo-barber.png" width="209" height="90" alt="Лого партнера">
-          </a>
-        </li>
-        <li class="partners-item">
-          <a>
-            <img src="img/logo-pink.png" width="185" height="52" alt="Лого партнера">
-          </a>
-        </li>
-        <li class="partners-item">
-          <a>
-            <img src="img/logo-mishka.png" width="173" height="84" alt="Лого партнера">
-          </a>
-        </li>
-      </ul>
-    </section>
     <section class="contacts">
       <h2 class="hidden">Мы на карте</h2>
       <figure class="map">
@@ -146,7 +157,7 @@
       <a class="button" href="#">Напишите нам</a>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <section class="social">
       <ul class="social-list clear-list">
         <li><a class="social-button" href="#">Вконтакте</a></li>
