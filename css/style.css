@@ -289,7 +289,37 @@
   opacity: 0.1;
 }
 
+/* catalog-page */
+
+.catalog-page {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 140px;
+  align-content: start;
+}
+
+.catalog-heading {
+  background-color: var(--basic-light-grey);
+  padding-top: 100px;
+  padding-bottom: 108px;
+}
+
+.catalog-heading h1 {
+  width: 727px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin: 0 auto;
+  color: var(--basic-black);
+}
+
 /*sort */
+
+.sort {
+  grid-column: 1 / -1;
+  padding-top: 55px;
+  padding-bottom: 48px;
+}
 
 .sort p {
   font-size: 18px;
@@ -327,6 +357,14 @@
   color: var(--basic-black);
 }
 
+.filter-price {
+  margin-bottom: 54px;
+}
+
+.filter-feature {
+  margin-top: 45px;
+}
+
 .filter-price input {
   background-color: var(--basic-light-grey);
 }
@@ -342,6 +380,7 @@
 }
 
 .grey-button {
+  margin-top: 50px;
   background-color: var(--basic-light-grey);
   color: var(--basic-black);
 }
@@ -361,12 +400,15 @@
 
 /* catalog */
 
+.goods-list {
+  padding-bottom: 55px;
+}
+
 .catalog h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
   color: var(--basic-black);
 }
 
@@ -381,7 +423,6 @@
 
 .catalog p {
   line-height: 18px;
-  text-align: center;
 }
 
 /* pagination */
