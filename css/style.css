@@ -316,7 +316,7 @@
 /*sort */
 
 .sort {
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
   padding-top: 55px;
   padding-bottom: 48px;
 }
@@ -401,7 +401,34 @@
 /* catalog */
 
 .goods-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 42px;
   padding-bottom: 55px;
+}
+
+.goods-item {
+  width: 360px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.goods-description {
+  position: absolute;
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-light-grey);
+  display: none;
+  bottom: 38px;
+  text-align: center;
+}
+
+.goods-item:hover .goods-description {
+  display: block;
+}
+
+.goods-description p {
+  padding-bottom: 32px;
 }
 
 .catalog h3 {
