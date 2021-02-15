@@ -145,7 +145,7 @@
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("..//img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -170,6 +170,7 @@
 }
 
 .selected {
+  padding-bottom: 13px;
   border-bottom: 2px solid var(--basic-light-red);
 }
 
@@ -221,6 +222,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: var(--basic-white);
 }
 
 .slider-button::before {
