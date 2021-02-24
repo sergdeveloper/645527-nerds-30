@@ -35,22 +35,11 @@
       </div>
     </div>
     <div class="catalog-page container">
-      <section class="sort">
-        <h2 class="hidden">Сортировка</h2>
-        <ul class="sort-list clear-list">
-          <li><p>Сортировать:</p></li>
-          <li><a class="sort-item">По цене</a></li>
-          <li><a class="sort-item">По типу</a></li>
-          <li><a class="sort-item">По названию</a></li>
-          <li><a class="sort-item more"></a></li>
-          <li><a class="sort-item less"></a></li>
-        </ul>
-      </section>
       <section class="filters">
         <h2 class="hidden">Фильтры</h2>
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-price">
-            <legend>Стоимость</legend>
+            <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -61,10 +50,10 @@
               </div>
               <div class="price-controls">
                 <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
+                  от <input type="text" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  до <input type="number" name="max-price" value="15000">
+                  до <input type="text" name="max-price" value="15000">
                 </label>
               </div>
             </div>
@@ -73,15 +62,15 @@
             <legend>Сетка:</legend>
             <ul class="filter-templates clear-list">
               <li>
-                <input class="filter-radio" type="radio" name="template-type" value="adaptive" id="filter-adaptive" checked>
+                <input class="filter-radio visually-hidden" type="radio" name="template-type" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li>
-                <input class="filter-radio" type="radio" name="template-type" value="fixed" id="filter-fixed">
+                <input class="filter-radio visually-hidden" type="radio" name="template-type" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li>
-                <input class="filter-radio" type="radio" name="template-type" value="liquid" id="filter-liquid">
+                <input class="filter-radio visually-hidden" type="radio" name="template-type" value="liquid" id="filter-liquid">
                 <label for="filter-liquid">Резиновая</label>
               </li>
             </ul>
@@ -90,23 +79,23 @@
             <legend>Особенности:</legend>
             <ul class="filter-properties clear-list">
               <li>
-                <input class="filter-check" type="checkbox" name="slider" id="filter-slider" checked>
+                <input class="filter-check visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
               <li>
-                <input class="filter-check" type="checkbox" name="advantage" id="filter-advantage">
+                <input class="filter-check visually-hidden" type="checkbox" name="advantage" id="filter-advantage">
                 <label for="filter-advantage">Преимущества</label>
               </li>
               <li>
-                <input class="filter-check" type="checkbox" name="news" id="filter-news" checked>
+                <input class="filter-check visually-hidden" type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
               <li>
-                <input class="filter-check" type="checkbox" name="gallery" id="filter-gallery">
+                <input class="filter-check visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li>
-                <input class="filter-check" type ="checkbox" name="cart" id="filter-cart">
+                <input class="filter-check visually-hidden" type ="checkbox" name="cart" id="filter-cart">
                 <label for="filter-cart">Корзина</label>
               </li>
             </ul>
@@ -115,11 +104,25 @@
         </form>
       </section>
       <section class="catalog">
+        <section class="sort">
+          <h2 class="hidden">Сортировка</h2>
+          <ul class="sort-list clear-list">
+            <li><p>Сортировать:</p></li>
+            <li class="sort-item active-sort"><a>По цене</a></li>
+            <li class="sort-item"><a>По типу</a></li>
+            <li class="sort-item"><a>По названию</a></li>
+            <li class="sort-item active-sort"><a class="more"></a></li>
+            <li class="sort-item"><a class="less"></a></li>
+          </ul>
+        </section>
         <h2 class="hidden">Список товаров</h2>
         <ul class="goods-list clear-list">
           <li class="goods-item">
             <a href="#">
-              <img src="img/img-sedona.jpg" width="359" height="578" alt="Шаблон sedona">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#e9e9e9"/>
+              </svg>
+              <img src="img/img-sedona.jpg" width="358" height="576" alt="Шаблон sedona">
             </a>
             <div class="goods-description">
               <h3>Sedona</h3>
@@ -129,7 +132,10 @@
           </li>
           <li class="goods-item">
             <a href="#">
-              <img src="img/img-pink.jpg" width="358" height="578" alt="Шаблон pink">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#e9e9e9"/>
+              </svg>
+              <img src="img/img-pink.jpg" width="358" height="576" alt="Шаблон pink">
             </a>
             <div class="goods-description">
               <h3>Pink app</h3>
@@ -139,7 +145,10 @@
           </li>
           <li class="goods-item">
             <a href="#">
-              <img src="img/img-barbershop.jpg" width="358" height="578" alt="Шаблон barbershop">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#e9e9e9"/>
+              </svg>
+              <img src="img/img-barbershop.jpg" width="358" height="576" alt="Шаблон barbershop">
             </a>
             <div class="goods-description">
               <h3>Barbershop</h3>
@@ -149,7 +158,10 @@
           </li>
           <li class="goods-item">
             <a href="#">
-              <img src="img/img-mishka.jpg" width="359" height="578" alt="Шаблон mishka">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#e9e9e9"/>
+              </svg>
+              <img src="img/img-mishka.jpg" width="358" height="576" alt="Шаблон mishka">
             </a>
             <div class="goods-description">
               <h3>Mishka</h3>
@@ -159,7 +171,10 @@
           </li>
           <li class="goods-item">
             <a href="#">
-              <img src="img/img-aplus.jpg" width="359" height="578" alt="Шаблон a plus">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#e9e9e9"/>
+              </svg>
+              <img src="img/img-aplus.jpg" width="358" height="576" alt="Шаблон a plus">
             </a>
             <div class="goods-description">
               <h3>A plus</h3>
@@ -169,7 +184,10 @@
           </li>
           <li class="goods-item">
             <a href="#">
-              <img src="img/img-kvast.jpg" width="359" height="578" alt="Шаблон kvast">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#e9e9e9"/>
+              </svg>
+              <img src="img/img-kvast.jpg" width="358" height="576" alt="Шаблон kvast">
             </a>
             <div class="goods-description">
               <h3>Кваст</h3>
@@ -179,14 +197,14 @@
           </li>
         </ul>
         <ul class="pagination clear-list">
-          <li><a class="button pagination-item active-pagination">1</a></li>
-          <li><a class="button pagination-item" href="#">2</a></li>
-          <li><a class="button pagination-item" href="#">3</a></li>
-          <li><a class="button grey-button" href="#">Следующая</a></li>
+          <li class="number"><a class="button pagination-item active-pagination">1</a></li>
+          <li class="number"><a class="button pagination-item" href="#">2</a></li>
+          <li class="number"><a class="button pagination-item" href="#">3</a></li>
+          <li class="next"><a class="button pagination-item " href="#">Следующая</a></li>
         </ul>
       </section>
     </div>
-    <section class="contacts">
+    <section class="contacts catalog-contacts">
       <h2 class="hidden">Мы на карте</h2>
       <div class="map">
         <img src="img/map.png" width="1920" height="416" alt="Карта">
