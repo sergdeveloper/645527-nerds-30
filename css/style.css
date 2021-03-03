@@ -218,9 +218,21 @@
   position: relative;
 }
 
-.slider p {
+.slide-first p {
   margin-bottom: 38px;
   margin-top: 0;
+  line-height: 25px;
+}
+
+.slide-second p {
+  margin-bottom: 27px;
+  margin-top: 35px;
+  line-height: 25px;
+}
+
+.slide-third p {
+  margin-bottom: 27px;
+  margin-top: 35px;
   line-height: 25px;
 }
 
@@ -229,43 +241,61 @@
   width: 132px;
 }
 
+.slide-list {
+  margin: 0;
+  padding: 0;
+}
+
+#first-slide:checked~.slide-list .slide-first,
+#second-slide:checked~.slide-list .slide-second,
+#third-slide:checked~.slide-list .slide-third {
+  display: block;
+}
+
 .slider-buttons {
   position: absolute;
-  bottom: 97px;
-  left: 546px;
+  bottom: 89px;
+  left: 536px;
   display: flex;
 }
 
-.slider-button {
+.slider-buttons label {
   position: relative;
-  margin-right: 17px;
-  border-radius: 50%;
+  display: inline-block;
   width: 18px;
   height: 18px;
-  border: none;
-  outline: none;
+  padding: 8px;
+  border-radius: 50%;
   cursor: pointer;
-  background-color: var(--basic-white);
 }
 
-.slider-button::before {
+.slider-button::after {
   content: "";
+  width: 18px;
+  height: 18px;
+  background: var(--basic-white);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+#first-slide:checked ~ .slider-buttons .control-one::before,
+#second-slide:checked ~ .slider-buttons .control-two::before,
+#third-slide:checked ~ .slider-buttons .control-three::before {
+  content: "";
+  display: block;
   position: absolute;
   left: 50%;
   top: 50%;
+  z-index: 2;
   width: 4px;
   height: 4px;
   margin: -4px;
+  background-color: inherit;
   border: 2px solid var(--slider-circle-grey);
   border-radius: 50%;
-}
-
-.slider-button:nth-child(2)::before {
-  display: none;
-}
-
-.slider-button:nth-child(3)::before {
-  display: none;
 }
 
 .slide {
@@ -273,10 +303,28 @@
 }
 
 .slide-first {
-  display: block;
+  display: none;
   background-image: url("../img/nerds-index-slide.png");
   background-repeat: no-repeat;
   background-position: right 5px bottom 1px;
+  padding-top: 67px;
+  padding-bottom: 80px;
+}
+
+.slide-second {
+  display: none;
+  background-image: url("../img/nerds-index-slide2.png");
+  background-repeat: no-repeat;
+  background-position: right 3px bottom 0px;
+  padding-top: 67px;
+  padding-bottom: 80px;
+}
+
+.slide-third {
+  display: none;
+  background-image: url("../img/nerds-index-slide3.png");
+  background-repeat: no-repeat;
+  background-position: right 3px bottom 1px;
   padding-top: 67px;
   padding-bottom: 80px;
 }
@@ -1073,6 +1121,7 @@
 .main-footer {
   display: flex;
   padding-top: 62px;
+  padding-bottom: 62px;
 }
 
 .social-list {
@@ -1144,7 +1193,7 @@
   line-height: 53px;
   font-weight: 700;
   margin: 0;
-  margin: 72px 549px 37px 100px;
+  margin: 68px 549px 37px 100px;
   color: var(--basic-black);
 }
 
@@ -1232,4 +1281,57 @@
 
 .popup-close:focus {
   opacity: 0.1;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+0% {
+  transform: translateY(-2000px);
+  left: 472px;
+}
+
+70% {
+  transform: translateY(50px);
+  left: 472px;
+}
+
+90% {
+  transform: translateY(-400px);
+  left: 472px;
+}
+
+100% {
+  transform: translateY(-50%);
+  left: 472px;
+}
+}
+
+@keyframes shake {
+0%,
+100% {
+  transform: translateX(0);
+}
+
+10%,
+30%,
+50%,
+70%,
+90% {
+  transform: translateX(-10px);
+}
+
+20%,
+40%,
+60%,
+80% {
+  transform: translateX(10px);
+}
 }

@@ -15,7 +15,7 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation container">
-      <a class="main-header-logo">
+      <a href="index.html" class="main-header-logo">
         <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип компании">
       </a>
       <ul class="site-navigation clear-list">
@@ -257,11 +257,11 @@
     <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="popup-name">Ваше имя:</label>
-        <input class="user-name" id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class="user-name" id="popup-name" type="text" name="name" placeholder="Имя Фамилия" required>
       </p>
       <p>
         <label for="popup-email">Ваш email:</label>
-        <input class="user-email" id="popup-email" type="text" name="email" placeholder="email@example.ru">
+        <input class="user-email" id="popup-email" type="email" name="email" placeholder="email@example.ru" required>
       </p>
       <p>
         <label for="popup-text">Текст письма:</label>
@@ -274,5 +274,6 @@
       </svg>
     </button>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
