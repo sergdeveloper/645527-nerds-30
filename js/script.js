@@ -1,55 +1,45 @@
-const loginLink = document.querySelector(".map-button");
-const loginPopup = document.querySelector(".popup");
-const loginClose = loginPopup.querySelector(".popup-close");
-const loginForm = loginPopup.querySelector(".popup-form");
-const loginLogin = loginPopup.querySelector(".popup-name");
-const loginEmail = loginPopup.querySelector(".popup-email");
-let isStorageSupport = true;
-let storage = "";
+const link = document.querySelector('.map-button');
+const popup = document.querySelector('.popup');
+const close = popup.querySelector('.popup-close');
+const form = popup.querySelector('.popup-form');
+const login = popup.querySelector('.user-name');
+const mail = popup.querySelector('.user-email');
+const storage = localStorage.getItem('user-name');
 
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-loginLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  loginPopup.classList.add("modal-show");
-
+link.addEventListener('click', function (event) {
+  event.preventDefault();
+  popup.classList.add('modal-show');
   if (storage) {
-    loginLogin.value = storage;
-    loginEmail.focus();
+    login.value = storage;
+    mail.focus();
   } else {
-    loginLogin.focus();
+    login.focus();
   }
 });
 
-loginClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  loginPopup.classList.remove("modal-show");
-  loginPopup.classList.remove("modal-error");
+close.addEventListener('click', function (event) {
+  event.preventDefault();
+  popup.classList.remove('modal-show');
+  popup.classList.remove('modal-error');
 });
 
-loginForm.addEventListener("submit", function (evt) {
-  if (!loginLogin.value || !loginEmail.value) {
-    evt.preventDefault();
-    loginPopup.classList.remove("modal-error");
-    loginPopup.offsetWidth = loginPopup.offsetWidth;
-    loginPopup.classList.add("modal-error");
+form.addEventListener('submit', function (event) {
+if (!login.value || !password.value) {
+  popup.classList.remove('modal-error');
+  popup.offsetWidth = popup.offsetWidth;
+  popup.classList.add('modal-error');
+  event.preventDefault();
   } else {
-    if (isStorageSupport) {
-      localStorage.setItem("login", loginLogin.value);
-    }
+    localStorage.setItem('login', login.value);
+    localStorage.setItem('mail', password.value);
   }
 });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (loginPopup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      loginPopup.classList.remove("modal-show");
-      loginPopup.classList.remove("modal-error");
-    }
+window.addEventListener('keydown', function (event) {
+if (event.keyCode === 27) {
+  if (popup.classList.contains('modal-show')) {
+    popup.classList.remove('modal-show');
+    popup.classList.remove('modal-error');
   }
+}
 });
