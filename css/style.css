@@ -586,7 +586,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding-bottom: 55px;
 }
 
@@ -820,7 +819,7 @@
 }
 
 .filter-templates label {
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .filter-radio + label::before {
@@ -872,11 +871,11 @@
 }
 
 .filter-radio:focus + label {
-  border: solid 2px var(--basic-black);
+  outline: solid 2px var(--basic-black);
 }
 
 .filter-feature {
-  margin-top: 26px;
+  margin-top: 30px;
 }
 
 .filter-feature legend {
@@ -884,13 +883,17 @@
 }
 
 .filter-feature li {
-  margin-bottom: 15px;
+  margin-bottom: 21px;
 }
 
 .filter-feature label {
   position: relative;
   display: block;
   padding-left: 36px;
+}
+
+.filter-properties label {
+  line-height: 20px;
 }
 
 .filter-check + label::before {
@@ -942,7 +945,7 @@
 }
 
 .filter-check:focus + label {
-  border: solid 2px var(--basic-black);
+  outline: solid 2px var(--basic-black);
 }
 
 .grey-button {
@@ -1010,6 +1013,7 @@
 
 .goods-item p {
   width: 255px;
+  max-height: 385px;
   margin: 0 auto;
   margin-top: 12px;
   margin-bottom: 48px;
